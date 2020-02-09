@@ -1,0 +1,55 @@
+@import "styling/stylesheet";
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(20, 24, 30, 0.95);
+    transition: transform 0.5s;
+    color: $white;
+    z-index: 9;
+
+    @supports ((backdrop-filter: blur(20px)) or (--webkit-backdrop-filter: blur(20px))) {
+        background-color: rgba(20, 24, 30, 0.85);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1250px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    box-sizing: border-box;
+    background: url(/assets/images/showcase.png);
+    background-size: 0;
+    font-size: $larger;
+
+     ul {
+         display: flex;
+     }
+
+    li {
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        height: 8.5rem;
+    }
+
+    .wrapper {
+        margin: 0 4rem;
+        font-size: $large;
+    }
+}

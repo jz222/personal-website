@@ -1,0 +1,56 @@
+@import "styling/stylesheet";
+
+footer {
+    margin-top: 10rem;
+    padding: 10rem 2rem 0 2rem;
+    background-color: $black;
+    color: $white;
+}
+
+article {
+    width: 100%;
+    margin-bottom: 5rem;
+    text-align: center;
+
+    &:first-child {
+        font-size: 3rem;
+    }
+
+    &:nth-child(3) {
+        li {
+            cursor: pointer;
+
+            &:hover {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+a {
+    color: $white;
+}
+
+b {
+    display: inline-block;
+    margin-bottom: 2.5rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 10rem 4rem 0 4rem;
+    }
+
+    article {
+        width: calc(65% / 3);
+        text-align: left;
+
+        &:first-child {
+            width: 35%;
+        }
+    }
+}

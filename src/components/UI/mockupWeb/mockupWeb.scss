@@ -1,0 +1,157 @@
+@import "styling/stylesheet";
+
+.mockup {
+    position: relative;
+    max-width: 310px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: $shadow-right;
+    overflow: hidden;
+    animation: animate 1.5s forwards;
+}
+
+.browser {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(56, 58, 60, 1) 20%, rgba(68, 70, 73, 1) 100%);
+}
+
+.controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    div {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-left: 10px;
+        background-color: rgb(255, 70, 58);
+
+        &:nth-child(2) {
+            background-color: rgb(255, 215, 10);
+        }
+
+        &:nth-child(3) {
+            background-color: rgb(50, 214, 75);
+        }
+    }
+}
+
+.bar {
+    width: 55%;
+    height: 55%;
+    margin-left: 90px;
+    border-radius: 40px;
+    background-color: #585b60;
+}
+
+.content {
+    width: 100%;
+    height: calc(100% - 30px);
+    background-color: white;
+    padding: 20px;
+}
+
+.modules {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    background-color: $white;
+    box-shadow: $shadow-card;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 15px;
+    background: url("/assets/logos/pipedrive.png") no-repeat center;
+    background-size: 80%;
+    background-color: $black;
+    z-index: 2;
+}
+
+.circle:last-of-type {
+    background: url("/assets/logos/slack.png") no-repeat center;
+    background-size: 45%;
+    background-color: $purple;
+}
+
+.lining {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: 2px;
+    background-color: $grey;
+    margin: auto;
+    z-index: 1;
+}
+
+.mapping {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    > div {
+        width: calc(100% / 3);
+        height: 70%;
+        display: block;
+        padding: 10px;
+        border-radius: 7px;
+        background-color: $white;
+        box-shadow: $shadow-card;
+
+        span {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 10px;
+            float: left;
+            border-radius: 20px;
+            background-color: $grey;
+            margin: 0 5px 5px 0;
+        }
+    }
+
+    > div:nth-child(2) {
+        height: 100%;
+        margin: 0 20px;
+
+        span {
+            width: 80%;
+            display: block;
+            margin: 0 auto 5px auto;
+            float: none;
+        }
+    }
+}
+
+@keyframes animate {
+    to {
+        transform: rotate3d(.340, -.95, 0, 20deg) rotateZ(7deg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mockup {
+        max-width: 470px;
+        height: 320px;
+    }
+}

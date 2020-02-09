@@ -1,0 +1,110 @@
+@import "styling/stylesheet";
+
+section {
+    overflow-x: visible;
+}
+
+article {
+    width: 100%;
+    height: 100%;
+    margin: 1.5rem 0 0 0;
+    text-align: justify;
+
+    p {
+        margin-bottom: 2rem;
+    }
+}
+
+.bubbles {
+    display: none;
+    width: 50%;
+    height: 100%;
+}
+
+.bubble {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: $white;
+    animation: float 1.8s alternate ease-in-out infinite;
+    overflow: hidden;
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+.react {
+    @extend .bubble;
+    width: 12rem;
+    height: 12rem;
+    margin: 0 0 0 13rem;
+    animation-delay: 0.1s;
+}
+
+.svelte {
+    @extend .bubble;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 0 0 25rem;
+    animation-delay: 0.4s;
+
+    img {
+        width: 70%;
+    }
+}
+
+.sass {
+    @extend .bubble;
+    width: 11rem;
+    height: 11rem;
+    margin: 0 0 0 7rem;
+    animation-delay: 0.2s;
+
+    img {
+        width: 65%;
+    }
+}
+
+.babel {
+    @extend .bubble;
+    width: 10.5rem;
+    height: 10.5rem;
+    display: flex;
+    margin: 0 0 0 22rem;
+    animation-delay: 0.35s;
+}
+
+.banner {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    article {
+        width: 50%;
+        margin: auto 5rem auto 4rem;
+    }
+
+    .bubbles {
+        display: block;
+    }
+
+    .banner {
+        display: none;
+    }
+}

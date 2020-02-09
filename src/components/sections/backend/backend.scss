@@ -1,0 +1,110 @@
+@import "styling/stylesheet";
+
+section {
+    overflow-x: visible;
+}
+
+article {
+    width: 100%;
+    height: 100%;
+    margin: 1.5rem 0 0 0;
+    text-align: justify;
+    order: 2;
+
+    p {
+        margin-bottom: 2rem;
+    }
+}
+
+.bubbles {
+    width: 50%;
+    height: 100%;
+    display: none;
+    order: 2;
+}
+
+.bubble {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: $white;
+    animation: float 1.8s alternate ease-in-out infinite;
+    overflow: hidden;
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+.go {
+    @extend .bubble;
+    width: 10.5rem;
+    height: 10.5rem;
+    margin: 0 0 0 29rem;
+    animation-delay: 0.1s;
+}
+
+.nodejs {
+    @extend .bubble;
+    width: 12rem;
+    height: 12rem;
+    margin: 0 0 0 14rem;
+    animation-delay: 0.4s;
+
+    img {
+        margin-top: 0.8rem;
+        width: 70%;
+    }
+}
+
+.mongoDB {
+    @extend .bubble;
+    width: 11rem;
+    height: 11rem;
+    margin: 0 0 0 28rem;
+    animation-delay: 0.35s;
+}
+
+.graphql {
+    @extend .bubble;
+    margin: 0 0 0 11rem;
+    animation-delay: 0.2s;
+
+    img {
+        width: 65%;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: auto;
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    article {
+        width: 50%;
+        margin: auto 4rem auto 5rem;
+        order: 1;
+    }
+
+    .bubbles {
+        display: block;
+    }
+
+    .banner {
+        display: none;
+    }
+}

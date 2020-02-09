@@ -1,0 +1,93 @@
+@import "styling/stylesheet";
+
+article {
+    width: 100%;
+    margin: 5rem 0 0 0;
+    order: 2;
+
+    h4 {
+        margin-bottom: 2rem;
+    }
+
+    img {
+        width: 7rem;
+        height: 7rem;
+        margin: 0 1rem 0 0;
+    }
+
+    div {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.link {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: $larger;
+    font-weight: bold;
+    color: $black;
+    cursor: pointer;
+
+    img {
+        width: 3rem;
+        height: auto;
+    }
+}
+
+.download {
+    a {
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+        border-radius: 0.7rem;
+        background-color: $black;
+        font-size: $smaller;
+        color: $white;
+
+        &:first-child {
+            margin-right: 1rem;
+        }
+    }
+
+    span {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: auto;
+        height: 60%;
+        filter: brightness(0) invert(1);
+    }
+}
+
+.showcase {
+    width: 100%;
+    order: 1;
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    article {
+        width: 50%;
+        margin: auto 4rem auto 0;
+        order: 1;
+    }
+
+    .showcase {
+        width: 50%;
+        order: 2;
+    }
+}

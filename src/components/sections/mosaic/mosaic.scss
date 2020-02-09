@@ -1,0 +1,68 @@
+@import "styling/stylesheet";
+
+article {
+    width: 100%;
+    margin: 5rem 0 0 0;
+}
+
+section {
+    background-color: $white;
+    transition: background-color 1s;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+h3 {
+    margin-bottom: 2rem;
+    font-family: 'Inria Serif', serif;
+    font-weight: 400;
+    color: $red;
+}
+
+h4 {
+    color: $white;
+}
+
+.intersecting {
+    background-color: $black;
+}
+
+.mockup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: $larger;
+    font-weight: bold;
+    color: $white;
+    cursor: pointer;
+
+    img {
+        width: 3rem;
+        height: auto;
+        margin-right: 1rem;
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    article {
+        width: 60%;
+        margin: auto 0 auto 4rem;
+    }
+
+    .mockup {
+        width: 40%;
+    }
+}

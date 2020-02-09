@@ -1,0 +1,74 @@
+@import "styling/stylesheet";
+
+section {
+    padding: 2rem 2rem 0 2rem;
+    flex-direction: column;
+    border-bottom: 1px solid $grey;
+}
+
+article {
+    width: 100%;
+    margin: 12rem 0 0 0;
+    order: 2;
+
+    > div {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        div {
+            width: 7rem;
+            height: 7rem;
+            margin: 0 1rem 0 0;
+            padding-left: 2px;
+            border-radius: 18px;
+            background-color: $black;
+            line-height: 7rem;
+            text-align: center;
+            font-size: $smaller;
+            color: $white;
+        }
+    }
+}
+
+.wrapper {
+    perspective: 1500px;
+    width: 100%;
+    order: 1;
+}
+
+.header {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto 7rem auto;
+    text-align: center;
+
+    h4:last-of-type {
+        margin-top: 2rem;
+        font-size: $larger;
+        color: $blue-grey;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: 4rem 4rem 0 4rem;
+    }
+
+    article {
+        width: 50%;
+        margin: auto 0;
+        padding-left: 7rem;
+        order: 1;
+    }
+
+    .wrapper {
+        width: 50%;
+        order: 2;
+    }
+
+    .header {
+        margin: 11rem auto 7rem auto;
+    }
+}

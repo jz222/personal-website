@@ -1,0 +1,80 @@
+@import "styling/stylesheet";
+
+article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    order: 1;
+}
+
+h5 {
+    margin-bottom: 3rem;
+    color: $white;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-color: $black;
+    background-image: radial-gradient(circle at bottom left, #292d33, $black);
+    box-shadow: $shadow-card;
+    color: $white;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    order: 2;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    article {
+        width: 55%;
+        order: 2;
+    }
+
+    .banner {
+        flex-direction: row;
+        background-image: radial-gradient(circle at top left, #292d33, $black);
+    }
+
+    .image {
+        width: 45%;
+        order: 1;
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-left: 5%;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .banner {
+        height: 35rem;
+    }
+
+    .image {
+        img {
+            width: auto;
+            height: 95%;
+        }
+    }
+}

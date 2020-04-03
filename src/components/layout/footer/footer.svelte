@@ -28,7 +28,9 @@
         <article>
             <b>{labels.footer.contact}</b>
             <ul>
-                <li>{labels.footer.email}</li>
+                <li>
+                    <a href="mailto:hello@timo.engineer" target="_top">{labels.footer.email}</a>
+                </li>
                 <li>
                     <a href="https://t.me/zimmermanntimo" target="_blank" rel="noreferrer">{labels.footer.telegram}</a>
                 </li>

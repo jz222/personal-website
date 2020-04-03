@@ -22,4 +22,8 @@
     <a href="https://t.me/zimmermanntimo" target="_blank" rel="noreferrer">
         <img src="/assets/socialButtons/telegram.svg" alt="telegram"/>
     </a>
+
+    <a href="mailto:hello@timo.engineer" target="_top">
+        <img src="/assets/socialButtons/email.svg" alt="email"/>
+    </a>
 </div>

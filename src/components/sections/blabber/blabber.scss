@@ -51,10 +51,6 @@ article {
         background-color: $black;
         font-size: $smaller;
         color: $white;
-
-        &:first-child {
-            margin-right: 1rem;
-        }
     }
 
     span {

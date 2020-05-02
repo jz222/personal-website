@@ -35,6 +35,12 @@ export default {
         chart: "Performance",
         latest: "Latest"
     },
+    loggy: {
+        name: "LOGGY",
+        caption: "With LOGGY production is no longer a black box. Monitor and analyze your web app.",
+        service: "LOGGY Service",
+        client: "LOGGY Client"
+    },
     stack: {
         frontendTitle: "UI's that excite",
         frontendText: "The past decade has seen my frontend development stack evolve from utilising basic HTML, CSS and sprinkles of Javascript to leveraging modern workflows. These are deep rooted with component based frameworks that align with build tools and transpilers such as Webpack, Rollup and Babel. This results in robust Single Page Apps as well as Progressive Web Apps. Throughout my career I've also designed and launched several mobile applications with hybrid solutions like React Native. I am familiar with all major frontend architectures from client side routing over server side rendering to the JAMstack.",

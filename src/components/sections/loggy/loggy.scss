@@ -1,0 +1,86 @@
+@import "styling/stylesheet";
+
+section {
+    padding: 7rem 2rem 0 2rem;
+}
+
+article {
+    width: 100%;
+    margin: 12rem 0 0 0;
+    order: 2;
+
+    > div {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        div {
+            width: 7rem;
+            height: 7rem;
+            margin: 0 1rem 0 0;
+            padding-left: 2px;
+            border-radius: 18px;
+            background-color: $black;
+            line-height: 7rem;
+            text-align: center;
+            font-size: $smaller;
+            color: $white;
+        }
+    }
+}
+
+.download {
+    margin-top: 2rem;
+
+    a {
+        width: 100%;
+        max-width: 22rem;
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+        border-radius: 0.7rem;
+        background-color: $black;
+        font-size: $smaller;
+        color: $white;
+
+        &:first-of-type {
+            margin-right: 2rem;
+        }
+    }
+
+    span {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: auto;
+        height: 60%;
+        filter: brightness(0) invert(1);
+    }
+}
+
+.wrapper {
+    width: 100%;
+    order: 1;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: 9rem 4rem;
+    }
+
+    article {
+        width: 50%;
+        margin: auto 0;
+        padding-left: 7rem;
+        order: 1;
+    }
+
+    .wrapper {
+        width: 50%;
+        order: 2;
+    }
+}

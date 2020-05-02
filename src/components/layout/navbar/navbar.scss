@@ -12,7 +12,7 @@ nav {
     background-color: rgba(20, 24, 30, 0.95);
     transition: transform 0.5s;
     color: $white;
-    z-index: 9;
+    z-index: 99;
 
     @supports ((backdrop-filter: blur(20px)) or (--webkit-backdrop-filter: blur(20px))) {
         background-color: rgba(20, 24, 30, 0.85);

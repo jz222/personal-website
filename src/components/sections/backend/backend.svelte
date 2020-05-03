@@ -27,10 +27,10 @@
                 <p>{labels.stack.backendText}</p>
 
                 <div class="banner">
-                    <img src="/assets/logos/go-black.png" alt="go"/>
-                    <img src="/assets/logos/nodejs-black.png" alt="nodejs"/>
-                    <img src="/assets/logos/mongodb-black.png" alt="mongodb"/>
-                    <img src="/assets/logos/graphql-black.png" alt="graphql"/>
+                    <img src="/assets/logos/go-grey.png" alt="go"/>
+                    <img src="/assets/logos/nodejs-grey.png" alt="nodejs"/>
+                    <img src="/assets/logos/mongodb-grey.png" alt="mongodb"/>
+                    <img src="/assets/logos/graphql-grey.png" alt="graphql"/>
                 </div>
             </article>
 

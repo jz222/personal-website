@@ -45,10 +45,10 @@
                 <p>{labels.stack.frontendText}</p>
 
                 <div class="banner">
-                    <img src="/assets/logos/react-black.png" alt="react"/>
-                    <img src="/assets/logos/svelte-black.png" alt="svelte"/>
-                    <img src="/assets/logos/sass-black.png" alt="sass"/>
-                    <img src="/assets/logos/babel-black.png" alt="babel"/>
+                    <img src="/assets/logos/react-grey.png" alt="react"/>
+                    <img src="/assets/logos/svelte-grey.svg" alt="svelte"/>
+                    <img src="/assets/logos/sass-grey.png" alt="sass"/>
+                    <img src="/assets/logos/babel-grey.png" alt="babel"/>
                 </div>
             </article>
         {/if}

@@ -7,7 +7,7 @@
     import Blabber from "components/sections/blabber/blabber.svelte";
     import Mosaic from "components/sections/mosaic/mosaic.svelte";
     import Jacando from "components/sections/jacando/jacando.svelte";
-    import Loggy from "components/sections/loggy/loggy.svelte";
+    import LogOwl from "components/sections/logowl/logowl.svelte";
     import Frontend from "components/sections/frontend/frontend.svelte"
     import Backend from "components/sections/backend/backend.svelte";
     import References from "components/sections/references/references.svelte"
@@ -31,7 +31,7 @@
     <Blabber/>
     <Mosaic/>
     <Jacando/>
-    <Loggy />
+    <LogOwl />
 
     <!--Stack-->
     <span bind:this={aboutAnchor}></span>

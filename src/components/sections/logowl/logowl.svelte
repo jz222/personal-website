@@ -17,7 +17,7 @@
 </script>
 
 <style lang="scss">
-    @import "loggy";
+    @import "logowl";
 </style>
 
 <section use:intersectionListener>
@@ -25,21 +25,23 @@
         {#if intersecting}
             <article>
                 <div transition:fly="{t1}">
-                    <div>LOGGY</div>
-                    <h3>{labels.loggy.name}</h3>
+                    <div>
+                        <img src="/assets/logos/log-owl.svg" alt="log owl logo" />
+                    </div>
+                    <h3>{labels.logowl.name}</h3>
                 </div>
 
-                <h4 transition:fly="{t2}">{labels.loggy.caption}</h4>
+                <h4 transition:fly="{t2}">{labels.logowl.caption}</h4>
 
                 <div class="download" transition:fly="{t2}">
-                    <a href="https://github.com/jz222/loggy" target="_blank" rel="noreferrer">
+                    <a href="https://logowl.io" target="_blank" rel="noreferrer">
                         <img src="/assets/icons/rocket.svg" alt="rocket"/>
-                        <span>{labels.loggy.service}</span>
+                        <span>{labels.logowl.website}</span>
                     </a>
 
-                    <a href="https://github.com/jz222/loggy-client" target="_blank" rel="noreferrer">
+                    <a href="https://docs.logowl.io" target="_blank" rel="noreferrer">
                         <img src="/assets/icons/globe.svg" alt="globe"/>
-                        <span>{labels.loggy.client}</span>
+                        <span>{labels.logowl.docs}</span>
                     </a>
                 </div>
             </article>

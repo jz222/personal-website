@@ -35,11 +35,11 @@ export default {
         chart: "Performance",
         latest: "Latest"
     },
-    loggy: {
-        name: "LOGGY",
-        caption: "With LOGGY production is no longer a black box. Monitor and analyze your web app.",
-        service: "LOGGY Service",
-        client: "LOGGY Client"
+    logowl: {
+        name: "Log Owl",
+        caption: "With Log Owl production is no longer a black box. Monitor and analyze your web app.",
+        website: "Website",
+        docs: "Documentation"
     },
     stack: {
         frontendTitle: "UI's that excite",

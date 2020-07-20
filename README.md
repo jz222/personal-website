@@ -5,3 +5,7 @@ My personal website [https://timo.engineer](https://timo.engineer) written in Sv
 ## Usage
 
 Download the repository and install the dependencies. Run the dev server with `npm run dev`.
+
+## License
+
+Please don't use this code without permission.
